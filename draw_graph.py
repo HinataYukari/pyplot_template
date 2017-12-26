@@ -20,7 +20,7 @@ y1 = data_1.iloc[:,1].astype(float)
 y2 = data_2.iloc[:,1].astype(float)
 y3 = data_3.iloc[:,1].astype(float)
 
-#ideal curve
+#ideal curve (y = ax^3)
 xlast = x[len(x)-1]
 ylast = yc[len(yc)-1]
 k = ylast / (xlast ** 3)
@@ -28,7 +28,7 @@ x_new = np.arange(0, xlast, 10)
 y_ideal = (np.array(x_new)**3)*k
 
 
-plt.plot(x, yc, 'co', label = "Datapoint")
+plt.plot(x, y1, 'co', label = "Datapoint")
 plt.plot(x_new, y_ideal, label = "$y = kx^3(k = {})$".format(k), color = 'm', linestyle = '-')
 
 #two graphs
