@@ -4,6 +4,7 @@ import pandas as pd
 import mglearn
 from IPython.display import display
 
+#reading data
 data_1 = pd.read_csv('score1.csv')
 data_2 = pd.read_csv('score2.csv')
 data_3 = pd.read_csv('score3.csv')
